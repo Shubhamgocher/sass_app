@@ -33,7 +33,6 @@ const CompanionsList = ({
       <h2 className="text-2xl font-bold">{title}</h2>
       <div>
         <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="text-lg w-2/3">Lessons</TableHead>
@@ -62,7 +61,7 @@ const CompanionsList = ({
                         </div>
                         <div className="flex flex-col gap-2">
                           <p className="text-xl font-bold">{name}</p>
-                          <p className="text-lg">{topic}</p>
+                          <p className="text-lg">Topic:{topic}</p>
                         </div>
                       </div>
                     </Link>
@@ -89,12 +88,7 @@ const CompanionsList = ({
                       <p className="text-lg ">{duration}</p>
                       <p className="text-lg max-md:hidden">mins</p>
                       <div className="md:hidden">
-                        <Image
-                          src={clock}
-                          alt="clock"
-                          width={12}
-                          height={12}
-                        />
+                        <Image src={clock} alt="clock" width={12} height={12} />
                       </div>
                     </div>
                   </TableCell>
